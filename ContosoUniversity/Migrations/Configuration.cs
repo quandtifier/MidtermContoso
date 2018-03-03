@@ -57,6 +57,52 @@ namespace ContosoUniversity.Migrations
             instructors.ForEach(s => context.Instructors.AddOrUpdate(p => p.LastName, s));
             context.SaveChanges();
 
+            var addresses = new List<Address>
+            {
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Alexander").ID,
+                    Email = "alex@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Alonso").ID,
+                    Email = "alonso@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Anand").ID,
+                    Email = "Anand@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Barzdukas").ID,
+                    Email = "Barzdukas@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Li").ID,
+                    Email = "Li@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Justice").ID,
+                    Email = "Justice@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Norman").ID,
+                    Email = "Norman@cu.edu" },
+                new Address {
+                    PersonID = students.Single( i => i.LastName == "Olivetto").ID,
+                    Email = "Olivetto@cu.edu" },
+                new Address {
+                    PersonID = instructors.Single( i => i.LastName == "Abercrombie").ID,
+                    Email = "Abercrombie@cu.edu" },
+                new Address {
+                    PersonID = instructors.Single( i => i.LastName == "Fakhouri").ID,
+                    Email = "Fakhouri@cu.edu" },
+                new Address {
+                    PersonID = instructors.Single( i => i.LastName == "Harui").ID,
+                    Email = "Harui@cu.edu" },
+                new Address {
+                    PersonID = instructors.Single( i => i.LastName == "Kapoor").ID,
+                    Email = "Kapoor@cu.edu" },
+                new Address {
+                    PersonID = instructors.Single( i => i.LastName == "Zheng").ID,
+                    Email = "Zheng@cu.edu" },
+            };
+            addresses.ForEach(s => context.Addresses.AddOrUpdate(p => p.PersonID, s));
+            context.SaveChanges();
+
+
             var departments = new List<Department>
             {
                 new Department { Name = "English",     Budget = 350000, 
