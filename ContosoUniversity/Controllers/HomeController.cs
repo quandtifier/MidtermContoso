@@ -44,7 +44,10 @@ namespace ContosoUniversity.Controllers
 
             return View();
         }
-
+        public ActionResult Chat()
+        {
+            return View();
+        }
         protected override void Dispose(bool disposing)
         {
             db.Dispose();
