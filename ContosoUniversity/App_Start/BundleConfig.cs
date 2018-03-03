@@ -24,7 +24,8 @@ namespace ContosoUniversity
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-theme.css", // comment line for default look and feel
+                      //"~/Content/bootstrap.css",// comment line for slate slightly broken slate theme
                       "~/Content/site.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
