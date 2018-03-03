@@ -19,21 +19,21 @@ namespace ContosoUniversity.Migrations
         {
             var students = new List<Student>
             {
-                new Student { FirstMidName = "Carson",   LastName = "Alexander", 
+                new Student { FirstMidName = "Carson",   LastName = "Alexander", Gpa=0.7, CreditsEarned=10,
                     EnrollmentDate = DateTime.Parse("2010-09-01") },
-                new Student { FirstMidName = "Meredith", LastName = "Alonso",    
+                new Student { FirstMidName = "Meredith", LastName = "Alonso", Gpa=3.7, CreditsEarned=20,
                     EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Arturo",   LastName = "Anand",     
+                new Student { FirstMidName = "Arturo",   LastName = "Anand", Gpa=3.7, CreditsEarned=30,
                     EnrollmentDate = DateTime.Parse("2013-09-01") },
-                new Student { FirstMidName = "Gytis",    LastName = "Barzdukas", 
+                new Student { FirstMidName = "Gytis",    LastName = "Barzdukas", Gpa=2.7, CreditsEarned=40,
                     EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Yan",      LastName = "Li",        
+                new Student { FirstMidName = "Yan",      LastName = "Li", Gpa=1.7, CreditsEarned=50,
                     EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Peggy",    LastName = "Justice",   
+                new Student { FirstMidName = "Peggy",    LastName = "Justice", Gpa=3.7, CreditsEarned=60,
                     EnrollmentDate = DateTime.Parse("2011-09-01") },
-                new Student { FirstMidName = "Laura",    LastName = "Norman",    
+                new Student { FirstMidName = "Laura",    LastName = "Norman", Gpa=2.7, CreditsEarned=70,
                     EnrollmentDate = DateTime.Parse("2013-09-01") },
-                new Student { FirstMidName = "Nino",     LastName = "Olivetto",  
+                new Student { FirstMidName = "Nino",     LastName = "Olivetto", Gpa=4.0, CreditsEarned=80,
                     EnrollmentDate = DateTime.Parse("2005-09-01") }
             };
 

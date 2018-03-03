@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201803031728275_AddressEntity.Designer.cs">
       <DependentUpon>201803031728275_AddressEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803031829534_CreditsAndGpaForStudent.cs" />
+    <Compile Include="Migrations\201803031829534_CreditsAndGpaForStudent.Designer.cs">
+      <DependentUpon>201803031829534_CreditsAndGpaForStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Course.cs" />
@@ -273,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803031728275_AddressEntity.resx">
       <DependentUpon>201803031728275_AddressEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803031829534_CreditsAndGpaForStudent.resx">
+      <DependentUpon>201803031829534_CreditsAndGpaForStudent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
