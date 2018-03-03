@@ -80,7 +80,7 @@ namespace ContosoUniversity.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "LastName,FirstMidName,HireDate,OfficeAssignment")]Instructor instructor, string[] selectedCourses)
+        public ActionResult Create([Bind(Include = "LastName,FirstMidName,HireDate,OfficeAssignment,Address")]Instructor instructor, string[] selectedCourses)
         {
             if (selectedCourses != null)
             {
@@ -156,7 +156,7 @@ namespace ContosoUniversity.Controllers
                .Single();
 
             if (TryUpdateModel(instructorToUpdate, "",
-               new string[] { "LastName", "FirstMidName", "HireDate", "OfficeAssignment" }))
+               new string[] { "LastName", "FirstMidName", "HireDate", "OfficeAssignment", "Address" }))
             {
                 try
                 {
