@@ -234,10 +234,12 @@ namespace ContosoUniversity.Controllers
         {
             Instructor instructor = db.Instructors
               .Include(i => i.OfficeAssignment)
+              .Include(i => i.Address)
               .Where(i => i.ID == id)
               .Single();
 
             instructor.OfficeAssignment = null;
+            instructor.Address = null;
             db.Instructors.Remove(instructor);
 
             var department = db.Departments

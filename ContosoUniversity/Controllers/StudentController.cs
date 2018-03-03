@@ -181,7 +181,12 @@ namespace ContosoUniversity.Controllers
         {
             try
             {
-                Student student = db.Students.Find(id);
+
+                Student student = db.Students
+                    .Include(s => s.Address)
+                    .Where(s => s.ID == id)
+                    .Single();
+                student.Address = null;
                 db.Students.Remove(student);
                 db.SaveChanges();
             }
