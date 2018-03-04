@@ -4944,9 +4944,10 @@ tbody.collapse.show {
     }
 
 .jumbotron {
+    background-image: url("~/Content/School-image.png");
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: #1c1e22;
+    background-color: #17234E;
     border-radius: 0.3rem
 }
 
